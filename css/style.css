@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "Fuente";
+    src: url("fonts/Rosario-Regular.ttf");
+}
+
+/* Estructura general */
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    min-height: 100%;
+
+    background-image: url("../img/fondo.jpg");
+    background-color: antiquewhite;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: "Fuente";
+}
+
+header {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: rgba(230, 209, 255, 0.692);
+}
+
+header h1 {
+    margin-left: 5%;
+}
+
+nav {
+    text-align: center;
+
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5%;
+}
+
+nav a {
+    display: inline-flex;
+    position: relative;
+    padding: 10px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    color: rgb(65, 35, 112);
+    border: 2px solid rgb(153, 67, 233);
+    background-color: rgb(227, 194, 255);
+}
+
+nav a:hover {
+    color: rgb(73, 18, 121);
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(239, 221, 255);
+}
+
+main {
+    height: auto;
+    width: auto;
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-bottom: 10px;
+
+    background-color: rgba(230, 209, 255, 0.692);
+    border-top: 5px rgb(0, 0, 0) solid;
+}
+
+main h1, h2 {
+    margin-top: 3%;
+}
+
+img {
+    display: block;
+
+    width: 15%;
+    max-height: 300px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 3px solid rgb(153, 67, 233);
+}
+
+.informacion {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+
+    text-align: center;
+}
+
+section {
+    margin-top: 3%;
+}
+
+footer {
+    display: block;
+
+    margin-top: auto;
+    padding: 1%;
+
+    background-color: rgba(230, 209, 255, 0.692);
+    border-style: solid;
+
+    text-align: center;
+}
+
+
+/* CSS para elementos varios */
+
+h1, h2 {
+    text-align: center;
+}
+
+hr {
+    /* Mantiene el estilo de la etiqueta hr en todos los navegadores */
+    color: rgb(255, 75, 165);
+    border: 1px solid rgb(255, 75, 165);
+    border-color: rgb(255, 75, 165);
+    background-color: rgb(255, 75, 165);
+}
+
+hr.article {
+    width: 50%;
+
+    /* Mantiene el color de la etiqueta hr en todos los navegadores */
+    color: rgb(180, 31, 106);
+    border: 1px solid rgb(180, 31, 106);
+    border-color: rgb(180, 31, 106);
+    background-color: rgb(180, 31, 106);
+}
+
+.small {
+    font-size: 12px;
+}
+
+.border {
+    border-radius: 100px;
+}
+
+.destaca {
+    font-weight: bolder;
+    color: rgb(212, 41, 127);
+}
+
+/* CSS para cuadrar el listado de la experiencia junto al contenido de la sección */
+
+.experiencia {
+    text-align: left;
+}
+
+.experiencia pre,
+.experiencia p:not(.experiencia article>ul>li>p) {
+    text-align: center;
+}
+
+.experiencia article>ul>li {
+    margin-left: 20%;
+}
